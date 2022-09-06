@@ -1,2 +1,2 @@
-# itmo_algs_labs
-ITMO university lab course "Algorithm design and analysis": python files and tex reports.
+# itmo_lab_reports
+ITMO university lab tex reports. Closed source, unfortunately.

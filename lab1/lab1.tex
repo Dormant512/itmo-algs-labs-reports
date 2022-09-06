@@ -1,0 +1,157 @@
+%! TeX program = xelatex
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{cmap}
+\usepackage[fontsize=12pt]{scrextend}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+\usepackage[left=20mm, top=20mm, right=20mm, bottom=20mm, nohead, footskip=1cm]{geometry}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+
+\usepackage{polyglossia}
+\usepackage{titlesec}
+\usepackage{sectsty}
+\usepackage{setspace}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{lipsum}
+\usepackage{tocloft}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{caption}
+%\captionsetup{labelfont=it, textfont=it}
+%\captionsetup[figure]{name=Схема}
+
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=false,
+    linktoc=all
+}
+
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\setkeys{russian}{babelshorthands=true}
+\setmainfont{Times New Roman}
+\newfontfamily\cyrillicfont{Times New Roman}
+\let\cyrillicfonttt\ttfamily
+%\onehalfspacing
+
+%\allsectionsfont{\centering}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+%======================================SECTIONING=========================================
+%\makeatletter
+%\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+%\makeatother
+%======================================SECTIONING=========================================
+
+\pretolerance=6000
+\tolerance=3000
+\emergencystretch=4pt
+
+\setlength\intextsep{10pt}
+
+\graphicspath{{./visuals/}}
+\setlength{\parskip}{0.3125cm}
+\setlength{\parindent}{1.25cm}
+\setlength{\columnsep}{1cm}
+\author{Grigoryev Mikhail}
+\title{Algs lab}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\vspace{30mm}
+
+\begin{center}
+FEDERAL STATE AUTONOMOUS EDUCATIONAL INSTITUTION \\
+OF HIGHER EDUCATION \\
+ITMO UNIVERSITY
+
+\vspace{40mm}
+
+{\large \textbf{Report \\
+on the practical task No. 1 \\
+"Experimental time complexity analysis"}}
+\end{center}
+
+\vspace{15mm}
+
+\begin{flushright}
+{\large Performed by \\
+\textit{Mikhail Grigoryev \\
+Academic group J4133c \\}
+Accepted by \\
+Dr Petr Chunaev}
+\end{flushright}
+
+\vspace{100mm}
+
+\begin{center}
+St. Petersburg \\
+2022
+\end{center}
+
+\newpage
+
+\section*{Goal}
+\addcontentsline{toc}{section}{Goal}
+
+Experimental study of the time complexity of different algorithms.
+
+\section*{Formulation of the problem}
+\addcontentsline{toc}{section}{Formulation of the problem}
+
+For each $n$ in range [1, 2000] the average computer execution time of programs implementing the algorithms and functions below (for five runs) is to be measured using timestamps. The obtained data is to be plotted showing the average execution time as a function of $n$. Theoretical time complexities are to be calculated and compared to empyrical.
+
+\begin{enumerate}
+\item Generate a random vector $v = [v_1, v_2, \cdots, v_n]$ with non-negative elements. For $v$, implement:
+	\begin{itemize}
+	\item $f(v) = const$;
+	\item $f(v) = \sum_{k=1}^n v_k$;
+	\item $f(v) = \prod_{k=1}^n v_k$;
+	\item supposing the elements of $v$ are the coefficients of a polynomial $P$ of degree $n-1$, calculate the value $P(1.5)$ by a direct calculation of $P(x) = \sum_{k=1}^n v_k x^{k-1}$ and by Horner's method by representing the polynomial as:
+		\[ P(x) = v_1 + x(v_2 + x(v_3 + \cdots)) \]
+	\item Bubble Sort of the elements of $v$;
+	\item Quick Sort of the elements of $v$;
+	\item Timsort of the elements of $v$.
+	\end{itemize}
+\item Generate random matrices $A$ and $B$ of size $n\times n$ with non-negative elements. Find the usual matrix product for $A$ and $B$.
+\item Describe the data structures and design techniques used within the algorithms.
+\end{enumerate}
+
+\section*{Brief theoretical part}
+\addcontentsline{toc}{section}{Brief theoretical part}
+
+Time complexity of an algorithm on a dataset of size $n$ refers to the amount of time that a certain computer requires to execute the algorithm on that dataset. As computers have vastly different computing powers, time complexity is usually represented in the "big O" notation.
+
+Definition:
+\[ f(n) = O(g(n)) \quad\Leftrightarrow\quad \exists n_0, c>0: \quad \forall n>n_0 \quad 0 \leq f(n) \leq cg(n) \]
+This represents that $f(N)$ grows no faster than $g(N)$, starting with datasets of size $N_0$.
+
+\section*{Results}
+\addcontentsline{toc}{section}{Results}
+
+%\begin{figure}[!h]
+%\centering
+%\includegraphics[width=0.75\textwidth]{image.png}
+%\end{figure}
+
+\section*{Conclusions}
+\addcontentsline{toc}{section}{Conclusions}
+
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+
+\end{document}
