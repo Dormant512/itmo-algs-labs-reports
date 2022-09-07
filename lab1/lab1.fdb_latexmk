@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1662471895 "lab1.xdv" "lab1.pdf" "lab1" 1662471895
-  "lab1.xdv" 1662471895 21696 5e3be5c1dda64bb0931d8c6af76b1d9c "xelatex"
+["xdvipdfmx"] 1662509402 "lab1.xdv" "lab1.pdf" "lab1" 1662509403
+  "lab1.xdv" 1662509402 86668 c241e03596597046886b89eea9fb0aab "xelatex"
   (generated)
   "lab1.pdf"
-["xelatex"] 1662471894 "lab1.tex" "lab1.xdv" "lab1" 1662471895
+["xelatex"] 1662509401 "lab1.tex" "lab1.xdv" "lab1" 1662509403
   "/etc/texmf/web2c/texmf.cnf" 1651151373 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1651154222 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,9 +135,19 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1651151409 5133734 e09a690fd040ec8d1b79c66eeb62edc1 ""
-  "lab1.aux" 1662471895 1666 6a20d9d788ac20e3019820e3cd551b13 "xelatex"
-  "lab1.out" 1662471895 669 73055f176052c6b692d025ea801f0f4e "xelatex"
-  "lab1.tex" 1662471893 4639 ec33ff78e16028a2ee12ff946fe53133 ""
+  "lab1.aux" 1662509402 3708 e5bb0a417948572b3b85c07d5ac375b5 "xelatex"
+  "lab1.out" 1662509402 671 4d22ae13dc57497b4b8bf60d41cb145e "xelatex"
+  "lab1.tex" 1662509401 11828 4ec9b62db844d76dcb5c3f66282df97b ""
+  "visuals//bubblesort.png" 1662487277 53994 bde7f04f74878808bf630c338018a928 ""
+  "visuals//const.png" 1662489419 41623 1646180e65300d44ec1e6b56a505634d ""
+  "visuals//matmul.png" 1662486550 47603 790ca809e4f340a1cb5649006fca7077 ""
+  "visuals//polydirect.png" 1662489051 50252 d173dc9823f4e9a6160a31d372b47a33 ""
+  "visuals//polyhorner.png" 1662487619 47711 5e7978e01dfbfc0fb32b0fffa9185229 ""
+  "visuals//prod.png" 1662489198 44679 c35ee3ea693fafe58cb539d5ae9da298 ""
+  "visuals//qr_lab1.png" 1662509204 8091 59e49e940ec6a8da50f2b6060fc7b974 ""
+  "visuals//quicksort.png" 1662486796 53089 22fecb7d9af782731d15b8bb96802905 ""
+  "visuals//sum.png" 1662489278 38838 579f2ab0a8bd95f2c96e65190c445f2b ""
+  "visuals//timsort.png" 1662486729 48898 692aa2703249a7d1db8de5077fc88966 ""
   (generated)
   "lab1.aux"
   "lab1.log"
