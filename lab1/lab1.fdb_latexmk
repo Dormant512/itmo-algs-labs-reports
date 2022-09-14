@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1662509402 "lab1.xdv" "lab1.pdf" "lab1" 1662509403
-  "lab1.xdv" 1662509402 86668 c241e03596597046886b89eea9fb0aab "xelatex"
+["xdvipdfmx"] 1663165146 "lab1.xdv" "lab1.pdf" "lab1" 1663165147
+  "lab1.xdv" 1663165146 91336 9716599b125d6eacd9207100c029e22a "xelatex"
   (generated)
   "lab1.pdf"
-["xelatex"] 1662509401 "lab1.tex" "lab1.xdv" "lab1" 1662509403
+["xelatex"] 1663165145 "lab1.tex" "lab1.xdv" "lab1" 1663165147
   "/etc/texmf/web2c/texmf.cnf" 1651151373 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1651154222 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,9 +135,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1651151409 5133734 e09a690fd040ec8d1b79c66eeb62edc1 ""
-  "lab1.aux" 1662509402 3708 e5bb0a417948572b3b85c07d5ac375b5 "xelatex"
-  "lab1.out" 1662509402 671 4d22ae13dc57497b4b8bf60d41cb145e "xelatex"
-  "lab1.tex" 1662509401 11828 4ec9b62db844d76dcb5c3f66282df97b ""
+  "lab1.aux" 1663165146 3938 9ab5ecf1a6cc40abc9063d38c4ce9597 "xelatex"
+  "lab1.out" 1663165146 671 4d22ae13dc57497b4b8bf60d41cb145e "xelatex"
+  "lab1.tex" 1663165143 12624 600bf08e6147a977b559b7ec3c6c5b01 ""
   "visuals//bubblesort.png" 1662487277 53994 bde7f04f74878808bf630c338018a928 ""
   "visuals//const.png" 1662489419 41623 1646180e65300d44ec1e6b56a505634d ""
   "visuals//matmul.png" 1662486550 47603 790ca809e4f340a1cb5649006fca7077 ""
@@ -148,6 +148,14 @@
   "visuals//quicksort.png" 1662486796 53089 22fecb7d9af782731d15b8bb96802905 ""
   "visuals//sum.png" 1662489278 38838 579f2ab0a8bd95f2c96e65190c445f2b ""
   "visuals//timsort.png" 1662486729 48898 692aa2703249a7d1db8de5077fc88966 ""
+  "visuals//valeria/bubblesort.png" 1663160010 39319 bb1f27434283fb7039a6100f4234af0d ""
+  "visuals//valeria/const.png" 1663160016 31021 c2d8d25df671448b3b4f8b743b9d0474 ""
+  "visuals//valeria/polydirect.png" 1663160026 31564 e246e1b03d21158a4f726527ecab1d1d ""
+  "visuals//valeria/polyhorner.png" 1663160021 43775 c0bb13e182857784dfc048ea17b0c083 ""
+  "visuals//valeria/prod.png" 1663160031 28035 362389ad7abe3091796d2c806556bac4 ""
+  "visuals//valeria/quicksort.png" 1663160036 46760 4ca535312109ca62358bcc39761d2c5c ""
+  "visuals//valeria/sum.png" 1663160040 25700 7272d7f3ff6b16db21ac4f30d0984622 ""
+  "visuals//valeria/timsort.png" 1663160095 49530 08f5cc94b9b06455b43ffa6533bf9676 ""
   (generated)
   "lab1.aux"
   "lab1.log"

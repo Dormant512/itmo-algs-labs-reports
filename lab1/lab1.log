@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.4.28)  7 SEP 2022 03:10
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.4.28)  14 SEP 2022 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,48 +918,61 @@ LaTeX Info: Redefining \ttfamily on input line 72.
  [1
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3]
 File: ./visuals//const.png Graphic file (type bmp)
 <./visuals//const.png>
+File: ./visuals//valeria/const.png Graphic file (type bmp)
+<./visuals//valeria/const.png>
+ [4]
 File: ./visuals//sum.png Graphic file (type bmp)
 <./visuals//sum.png>
+File: ./visuals//valeria/sum.png Graphic file (type bmp)
+<./visuals//valeria/sum.png>
+ [5]
 File: ./visuals//prod.png Graphic file (type bmp)
 <./visuals//prod.png>
- [4]
+File: ./visuals//valeria/prod.png Graphic file (type bmp)
+<./visuals//valeria/prod.png>
+ [6]
 File: ./visuals//polydirect.png Graphic file (type bmp)
 <./visuals//polydirect.png>
- [5]
+File: ./visuals//valeria/polydirect.png Graphic file (type bmp)
+<./visuals//valeria/polydirect.png>
+ [7]
 File: ./visuals//polyhorner.png Graphic file (type bmp)
 <./visuals//polyhorner.png>
+File: ./visuals//valeria/polyhorner.png Graphic file (type bmp)
+<./visuals//valeria/polyhorner.png>
+ [8]
 File: ./visuals//bubblesort.png Graphic file (type bmp)
 <./visuals//bubblesort.png>
+File: ./visuals//valeria/bubblesort.png Graphic file (type bmp)
+<./visuals//valeria/bubblesort.png>
+ [9]
 File: ./visuals//quicksort.png Graphic file (type bmp)
 <./visuals//quicksort.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6]
+File: ./visuals//valeria/quicksort.png Graphic file (type bmp)
+<./visuals//valeria/quicksort.png>
+ [10]
 File: ./visuals//timsort.png Graphic file (type bmp)
 <./visuals//timsort.png>
+File: ./visuals//valeria/timsort.png Graphic file (type bmp)
+<./visuals//valeria/timsort.png>
+ [11]
 File: ./visuals//matmul.png Graphic file (type bmp)
 <./visuals//matmul.png>
 
-Underfull \hbox (badness 1308) in paragraph at lines 233--233
+Underfull \hbox (badness 1308) in paragraph at lines 257--257
 []\TU/TimesNewRoman(0)/m/n/12 Figure 9: |Empyrical and theoretical time complexities of an algorithm implementing matrix
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7]
 File: ./visuals//qr_lab1.png Graphic file (type bmp)
 <./visuals//qr_lab1.png>
 The property list \polyglossia@langsetup contains the pairs (without outer
@@ -1012,7 +1025,7 @@ braces):
 >  {russian/babelname}  =>  {russian}
 >  {russian/localnumeral}  =>  {russiannumerals}
 >  {russian/Localnumeral}  =>  {Russiannumerals}.
- [8] (./lab1.aux
+[12] (./lab1.aux
 LaTeX Info: Redefining \rmfamily on input line 23.
 LaTeX Info: Redefining \sffamily on input line 23.
 LaTeX Info: Redefining \ttfamily on input line 23.
@@ -1027,12 +1040,12 @@ Package rerunfilecheck Info: File `lab1.out' has not changed.
 (rerunfilecheck)             Checksum: 4D22AE13DC57497B4B8BF60D41CB145E;671.
  ) 
 Here is how much of TeX's memory you used:
- 20499 strings out of 476191
- 396065 string characters out of 5812072
+ 20565 strings out of 476191
+ 398369 string characters out of 5812072
  886841 words of memory out of 5000000
- 40899 multiletter control sequences out of 15000+600000
+ 40963 multiletter control sequences out of 15000+600000
  475234 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,7n,117p,498b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lab1.xdv (8 pages, 86668 bytes).
+Output written on lab1.xdv (12 pages, 91336 bytes).

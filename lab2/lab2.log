@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.7.5)  8 SEP 2022 02:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.4.28)  14 SEP 2022 17:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -86,9 +86,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language77). Reported on input line 105.
+(babel)             (\language10). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language77). Reported on input line 108.
+(babel)             (\language10). Reported on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
 File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
 Language: russian 2020/09/09 1.3k Russian support for the Babel system
@@ -918,11 +918,11 @@ LaTeX Info: Redefining \ttfamily on input line 72.
  [1
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 118.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3] [4]
@@ -1012,11 +1012,11 @@ Package rerunfilecheck Info: File `lab2.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  20470 strings out of 476191
- 395317 string characters out of 5812073
- 885840 words of memory out of 5000000
+ 395317 string characters out of 5812072
+ 885841 words of memory out of 5000000
  40871 multiletter control sequences out of 15000+600000
  475242 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,8n,117p,568b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on lab2.xdv (7 pages, 81216 bytes).
+Output written on lab2.xdv (7 pages, 81568 bytes).

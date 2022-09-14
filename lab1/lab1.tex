@@ -91,7 +91,8 @@ on the practical task No. 1 \\
 
 \begin{flushright}
 {\large Performed by \\
-\textit{Mikhail Grigoryev \\
+\textit{Grigoryev Mikhail (370852) \& \\
+Semenova Valeria (370061) \\
 Academic group J4133c \\}
 Accepted by \\
 Dr Petr Chunaev}
@@ -167,30 +168,42 @@ Measurements of average execution time of constant function with time complexity
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{const.png}
-\caption{Empyrical and theoretical time complexities of an algorithm implementing the function $f(v)=1$.}
+\includegraphics[width=0.9\textwidth]{valeria/const.png}
+\caption{Empyrical and theoretical time complexities of an algorithm implementing the function $f(v)=1$ (on two different machines).}
 \end{figure}
+
 Deviations from the constant are minimal and can be caused by system processes interrupting the program, as it is utilizing only one processor core.
+
+\newpage
 
 Summation of all items within a random vector indeed was executed in linear time, as shown in the graph below.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{sum.png}
-\caption{Empyrical and theoretical time complexities of an algorithm implementing the function $f(v)=\sum_{k=1}^{n} v_k$.}
+\includegraphics[width=0.9\textwidth]{valeria/sum.png}
+\caption{Empyrical and theoretical time complexities of an algorithm implementing the function $f(v)=\sum_{k=1}^{n} v_k$ (on two different machines).}
 \end{figure}
+
 The computation was done in linear time, although the slope of the line seems low. This can be caused by simple mathematical operators such as "+" to be processed really fast.
+
+\newpage
 
 Similar trends were observed with the product function. The slope, however, is higher as "*" operator is processed slower than "+". Several slopes can be calculated because of system interferences.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{prod.png}
-\caption{Empyrical and theoretical time complexities of an algorithm implementing the function $f(v)=\prod_{k=1}^{n} v_k$.}
+\includegraphics[width=0.9\textwidth]{valeria/prod.png}
+\caption{Empyrical and theoretical time complexities of an algorithm implementing the function $f(v)=\prod_{k=1}^{n} v_k$ (on two different machines).}
 \end{figure}
+
+\newpage
 
 Polynomial evaluation takes more time than the former algorithms, so random system interferences do not impact the measurements as much. Clear linear trend can be observed in direct polynomial evaluation.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{polydirect.png}
-\caption{Empyrical and theoretical time complexities of an algorithm implementing direct term-by-term evaluation of a polynomial.}
+\includegraphics[width=0.9\textwidth]{valeria/polydirect.png}
+\caption{Empyrical and theoretical time complexities of an algorithm implementing direct term-by-term evaluation of a polynomial (on two different machines).}
 \end{figure}
 
 \newpage
@@ -199,22 +212,30 @@ Horner's method of evaluation of a polynomial at a certain point gave similar re
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{polyhorner.png}
-\caption{Empyrical and theoretical time complexities of an algorithm implementing Horner's method of evaluation of a polynomial.}
+\includegraphics[width=0.9\textwidth]{valeria/polyhorner.png}
+\caption{Empyrical and theoretical time complexities of an algorithm implementing Horner's method of evaluation of a polynomial (on two different machines).}
 \end{figure}
+
+\newpage
 
 A vastly different picture was observed with bubble sort. It gave a generally parabolic trend, however the deviation of execution time grew as datasets increased in size. This could be caused by bubble sorting algorithm being really dependent on the starting condition of the input vector.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{bubblesort.png}
-\caption{Empyrical and theoretical time complexities of a bubble sorting algorithm.}
+\includegraphics[width=0.9\textwidth]{valeria/bubblesort.png}
+\caption{Empyrical and theoretical time complexities of a bubble sorting algorithm (on two different machines).}
 \end{figure}
+
+\newpage
 
 Clear $O(n \log n)$ time complexity can be observed in the graph below, where execution time of quicksort algorithm is depicted.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=\textwidth]{quicksort.png}
-\caption{Empyrical and theoretical time complexities of a quicksort algorithm.}
+\includegraphics[width=\textwidth]{valeria/quicksort.png}
+\caption{Empyrical and theoretical time complexities of a quicksort algorithm (on two different machines).}
 \end{figure}
+
 Deviation is minimal and seems caused by system interruptions as the deviation incresed and decreased in a step manner.
 
 \newpage
@@ -223,8 +244,11 @@ Timsort gave an $n \log n$ tendency, although visually it resembles linear time.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=\textwidth]{timsort.png}
-\caption{Empyrical and theoretical time complexities of a timsort algorithm.}
+\includegraphics[width=\textwidth]{valeria/timsort.png}
+\caption{Empyrical and theoretical time complexities of a timsort algorithm (on two different machines).}
 \end{figure}
+
+\newpage
 
 Matrix multiplication is a time consuming task which usually has time complexity of $O(n^3)$. Constants decide, whether computations will take seconds or hours, in that case. As shown in the graph below, cubic time was measured for numpy matmul implementation of matrix multiplication.
 \begin{figure}[!h]

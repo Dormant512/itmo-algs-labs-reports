@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1662594102 "lab2.xdv" "lab2.pdf" "lab2" 1662594103
-  "lab2.xdv" 1662594102 81216 b562bec66493c45543b1dc7cf8e821dd "xelatex"
+["xdvipdfmx"] 1663165469 "lab2.xdv" "lab2.pdf" "lab2" 1663165469
+  "lab2.xdv" 1663165469 81568 c3f3c2ee1dfda7434534b76f7b98858f "xelatex"
   (generated)
   "lab2.pdf"
-["xelatex"] 1662594101 "lab2.tex" "lab2.xdv" "lab2" 1662594103
-  "/etc/texmf/web2c/texmf.cnf" 1657043991 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1662587279 3240 c2435f2b5cd66d4930bc29b8df87967e ""
+["xelatex"] 1663165468 "lab2.tex" "lab2.xdv" "lab2" 1663165469
+  "/etc/texmf/web2c/texmf.cnf" 1651151373 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1651154222 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -134,16 +134,16 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1605910342 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
-  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1657044025 5133317 b28db23c83b1f49accf679467937b7fe ""
-  "lab2.aux" 1662594102 2461 7baacc56d63514c48adb531854bc0189 "xelatex"
-  "lab2.out" 1662594102 670 30ed56e440398d9432b838b6257db608 "xelatex"
-  "lab2.tex" 1662594100 11648 86a052e5cf8d3cbc1c52d7fc8e7377a0 ""
-  "visuals//lab2task1.png" 1662586848 8082 f5fecd6e3feb44149e71c5171db4f5b4 ""
-  "visuals//lab2task2.png" 1662586897 8068 c94c5da5f34b5e8f72ebdaf9191536a2 ""
-  "visuals//line1.png" 1662592800 28478 a3b7a3b3e7ca317996c2d41b4adbae9f ""
-  "visuals//line2.png" 1662592828 22821 6cb7b8f40dfcd185419aff334c7b2123 ""
-  "visuals//rational1.png" 1662592708 29402 ca7086a866cde97da06936b08afc1705 ""
-  "visuals//rational2.png" 1662592741 17234 53e21f6d8ad049fdaa505207c1ebc001 ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1651151409 5133734 e09a690fd040ec8d1b79c66eeb62edc1 ""
+  "lab2.aux" 1663165469 2461 7baacc56d63514c48adb531854bc0189 "xelatex"
+  "lab2.out" 1663165469 670 30ed56e440398d9432b838b6257db608 "xelatex"
+  "lab2.tex" 1663165394 11686 f63ebee490f3dffb59d8c4bb71645dc2 ""
+  "visuals//lab2task1.png" 1662620932 8082 f5fecd6e3feb44149e71c5171db4f5b4 ""
+  "visuals//lab2task2.png" 1662620932 8068 c94c5da5f34b5e8f72ebdaf9191536a2 ""
+  "visuals//line1.png" 1662620932 28478 a3b7a3b3e7ca317996c2d41b4adbae9f ""
+  "visuals//line2.png" 1662620932 22821 6cb7b8f40dfcd185419aff334c7b2123 ""
+  "visuals//rational1.png" 1662620932 29402 ca7086a866cde97da06936b08afc1705 ""
+  "visuals//rational2.png" 1662620932 17234 53e21f6d8ad049fdaa505207c1ebc001 ""
   (generated)
   "lab2.aux"
   "lab2.log"
