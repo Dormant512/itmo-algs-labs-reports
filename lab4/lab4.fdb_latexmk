@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1664384969 "lab4.xdv" "lab4.pdf" "lab4" 1664384969
-  "lab4.xdv" 1664384969 73572 2cfcc5b20cb61e6e6e1fb86452588569 "xelatex"
+["xdvipdfmx"] 1664386373 "lab4.xdv" "lab4.pdf" "lab4" 1664386373
+  "lab4.xdv" 1664386373 73648 2f8fb5b99e05f299ffc0f3b19fe2ab83 "xelatex"
   (generated)
   "lab4.pdf"
-["xelatex"] 1664384968 "lab4.tex" "lab4.xdv" "lab4" 1664384969
+["xelatex"] 1664386372 "lab4.tex" "lab4.xdv" "lab4" 1664386373
   "/etc/texmf/web2c/texmf.cnf" 1651151373 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1651154222 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,9 +135,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1651151409 5133734 e09a690fd040ec8d1b79c66eeb62edc1 ""
-  "lab4.aux" 1664384969 2284 db5d2e1e7781c50a92d213100ea05294 "xelatex"
-  "lab4.out" 1664384969 669 003458d794a7d0e584d066525b468808 "xelatex"
-  "lab4.tex" 1664384966 10415 650d0b1a4a64c8347656bea19227605a ""
+  "lab4.aux" 1664386373 2284 db5d2e1e7781c50a92d213100ea05294 "xelatex"
+  "lab4.out" 1664386373 669 003458d794a7d0e584d066525b468808 "xelatex"
+  "lab4.tex" 1664386370 10337 9984060ebe87cb5389334d038a3a7231 ""
   "visuals//lab4-1.png" 1664382974 8064 b00591458c5ed8cb32cb8ff9837bfc3b ""
   "visuals//lab4-2.png" 1664383195 8093 70a444a99d0dc6ce32c6c508fe1c33d5 ""
   "visuals//pic1.png" 1664381645 41410 72bb9189a90a8785dc90a5043482657e ""

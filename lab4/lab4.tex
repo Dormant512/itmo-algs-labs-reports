@@ -161,13 +161,13 @@ In the second task the path in the Travelling Salesman Problem was optimized by 
 
 \textbf{Task 1.} Noisy data was generated. Then, Nelder-Mead (task 2), Levenberg-Marquardt (task 3), Simulated Annealing and Differential Evolution methods of non-linear approximation were applied to the problem. The data obtained is presented in the table:
 \begin{center}
-\begin{tabular}{cccc}
+\begin{tabular}{ccccccc}
 \hline
-alg/param                    & A, B, C, D & Iterations & Function calls \\ \hline
-Nelder-Mead Search (Task 2)  & -1.0037 \newline 1.0042 \newline -2.0009 \newline 1.0009 & 399 & 665 \\
-Levenberg-Marquardt (Task 3) & -1.0074 \newline 1.0078 \newline -2.0008 \newline 1.0008 & 123 & 123 \\
-Differential Evolution       & -1.0070 \newline 1.0074 \newline -2.0009 \newline 1.0009 & 158 & 9700 \\
-Simulated Annealing          & -1.0036 \newline 1.0041 \newline -2.0009 \newline 1.0009 & 4 & 1021 \\ \hline
+alg/param                    & A & B & C & D & Iterations & Function calls \\ \hline
+Nelder-Mead Search (Task 2)  & -1.0037 & 1.0042 & -2.0009 & 1.0009 & 399 & 665 \\
+Levenberg-Marquardt (Task 3) & -1.0074 & 1.0078 & -2.0008 & 1.0008 & 123 & 123 \\
+Differential Evolution       & -1.0070 & 1.0074 & -2.0009 & 1.0009 & 158 & 9700 \\
+Simulated Annealing          & -1.0036 & 1.0041 & -2.0009 & 1.0009 & 4 & 1021 \\ \hline
 \end{tabular}
 \end{center}
 All four methods gave close results. Interestingly, the approximations fit only data with $x < 1.5$. The resulting function predicted is:
