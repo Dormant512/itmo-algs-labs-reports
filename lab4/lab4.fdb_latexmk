@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1664375847 "lab3.xdv" "lab3.pdf" "lab3" 1664375847
-  "lab3.xdv" 1664375847 71224 d15c68b0a3b6e0ff05631648ccb7538b "xelatex"
+["xdvipdfmx"] 1664384969 "lab4.xdv" "lab4.pdf" "lab4" 1664384969
+  "lab4.xdv" 1664384969 73572 2cfcc5b20cb61e6e6e1fb86452588569 "xelatex"
   (generated)
-  "lab3.pdf"
-["xelatex"] 1664375846 "lab3.tex" "lab3.xdv" "lab3" 1664375847
+  "lab4.pdf"
+["xelatex"] 1664384968 "lab4.tex" "lab4.xdv" "lab4" 1664384969
   "/etc/texmf/web2c/texmf.cnf" 1651151373 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1651154222 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,14 +135,16 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1651151409 5133734 e09a690fd040ec8d1b79c66eeb62edc1 ""
-  "lab3.aux" 1664375847 2256 28e5f899607bdfaba712656b5472abf1 "xelatex"
-  "lab3.out" 1664375847 669 bd6db0f6965dd52759b469dd1870ffa6 "xelatex"
-  "lab3.tex" 1664375844 10386 799a8fb98c10f3e8d2b8ec0c8f0e6039 ""
-  "visuals//lab3.png" 1664372366 8068 80d86913ee858231c26df55caca03e1b ""
-  "visuals//line.png" 1664310276 34071 ecf79623aea4026903138584b9fd62b1 ""
-  "visuals//rational.png" 1664310407 35209 ff4ee82815b22d35959e8d0cbab84017 ""
+  "lab4.aux" 1664384969 2284 db5d2e1e7781c50a92d213100ea05294 "xelatex"
+  "lab4.out" 1664384969 669 003458d794a7d0e584d066525b468808 "xelatex"
+  "lab4.tex" 1664384966 10415 650d0b1a4a64c8347656bea19227605a ""
+  "visuals//lab4-1.png" 1664382974 8064 b00591458c5ed8cb32cb8ff9837bfc3b ""
+  "visuals//lab4-2.png" 1664383195 8093 70a444a99d0dc6ce32c6c508fe1c33d5 ""
+  "visuals//pic1.png" 1664381645 41410 72bb9189a90a8785dc90a5043482657e ""
+  "visuals//pic2.png" 1664383888 62138 83fb6b579f3a80aaa90e0c6c409d1092 ""
+  "visuals//pic3.png" 1664383972 50318 2ee93e45db1ce3c69c59c65636dbc7dc ""
   (generated)
-  "lab3.aux"
-  "lab3.log"
-  "lab3.out"
-  "lab3.xdv"
+  "lab4.aux"
+  "lab4.log"
+  "lab4.out"
+  "lab4.xdv"
