@@ -83,8 +83,8 @@ ITMO UNIVERSITY
 \vspace{40mm}
 
 {\large \textbf{Report \\
-on the practical task No. 6 \\
-"Algorithms on graphs. Path search algorithms on weighted graphs"}}
+on the practical task No. 5 \\
+"Algorithms on graphs. Introduction to graphs and basic algorithms on graphs"}}
 \end{center}
 
 \vspace{15mm}
@@ -110,25 +110,24 @@ St. Petersburg \\
 \section*{Goal}
 \addcontentsline{toc}{section}{Goal}
 
-The use of path search algorithms on weighted graphs (Dijkstra's, A* and Bellman-Ford algorithms).
+The use of different representations of graphs and basic algorithms on graphs (Depth-first search and Breadth-first search).
 
 \section*{Formulation of the problem}
 \addcontentsline{toc}{section}{Formulation of the problem}
 
-\textbf{Task 1.} Generate a random adjacency matrix for a simple undirected weighted graph of 100 vertices and 500 edges with assigned random positive integer weights (note that the matrix should be symmetric and contain only 0s and weights as elements). Use Dijkstra's and Bellman-Ford algorithms to find shortest paths between a random starting vertex and other vertices. Measure the time required to find the paths for each algorithm. Repeat the experiment 10 times for the same starting vertex and calculate the average time required for the paths search of each algorithm. Analyse the results obtained.
+\textbf{Task 1.} Generate a random adjacency matrix for a simple undirected unweighted graph of 100 vertices and 200 edges (note that the matrix should be symmetric and contain only 0s and 1s as elements). Transfer the matrix into an adjacency list. Visualize the graph and print several rows of the adjacency matrix and the adjacency list. Which purposes is each representation more convenient for?
 
-\textbf{Task 2.} Generate a 10$\times$20 cell grid with 40 obstacle cells. Choose two random non-obstacle cells and find a shortest path between them using A* algorithm. Repeat the experiment 5 times with different random pair of cells. Analyse the results obtained.
+\textbf{Task 2.} Use Depth-first search to find connected components of the graph and Breadth-first search to find a shortest path between two random vertices. Analyse the results obtained.
 
 \section*{Brief theoretical part}
 \addcontentsline{toc}{section}{Brief theoretical part}
 
-Path search algorithms on graphs are used to find shortest paths between two vertices. In case of unweighted graphs, those paths consist of the least number of edges. In this practical work, however, graphs are weighted which means that numbers (costs) are assigned to the edges. Here, the shortest path between two vertices is defined as the path with the least sum of edge costs.
+Path search algorithms on graphs are used to find shortest paths between two vertices. In case of unweighted graphs, those paths consist of the least number of edges.
 
 Algorithms used in this practical work (implemented from NetworkX library):
 \begin{enumerate}
-	\item Dijkstra's algorithm -- a search algorithm for weighted graphs with positive costs only. The algorithm uses tentative distances of vertices of the graph (lengths of shortest paths between the starting node and the current one). At each step, all neighbors of the current vertex are taken into account. Their tentative distances are measured, and, if better than previous values, are updated (paths are logged). When the current node is the end node, tentative distance is updated and the shortest logged path is taken as the shortest one.
-	\item Bellman-Ford algorithm (although slower than Dijkstra's) can be used even on weighted graphs with negative costs. The algorithm initializes all nodes with infinite distances and then for all edges updates the distances to lower values if taking that edge lowers the distance to the destination. As the longest possible path (with no cycles) is $|V| - 1$ edges long, the edges must be scanned that many times to make sure that all of the paths to the nodes were optimized. This algorithm can detect negative loops (loops with costs adding up to a negative value) as in those cases no shortest path exists.
-	\item A* algorithm is complete and extremely fast but requires vast amounts of additional memory.It utilizes heuristics in a sense that at every iteration it estimates which paths have to be extended (based on the cost of the path to the current node plus heuristic function that estimates the cheapest path from the node to the goal). The algorithm terminates when the extended path is the one from the start to the goal or when there are no paths to be extended.
+	\item Depth-first search (here for finding connected components) was implemented from scratch recursively. DFS utilizes a neighbor stack (unlinke BFS which uses a queue). It is a simple algorithm that looks at all neighbors of the current vertex, puts them on the stack, then takes the first neighbor in the stack and that vertex becomes current. This results in the vertices in one branch being traversed first.
+	\item Breadth-first search (here for finding the shortest path) was taken from NetworkX. The method \textit{nx.shortest\_path} was used, if the graph is unweighted, BFS is used by default. It is a traversal algorithm similar to DFS. However, BFS uses a neighbor queue, thus the vertices closest to the stariting one are being traversed first.
 \end{enumerate}
 
 \newpage
@@ -136,50 +135,58 @@ Algorithms used in this practical work (implemented from NetworkX library):
 \section*{Results}
 \addcontentsline{toc}{section}{Results}
 
-\textbf{Task 1.} A random adjacency matrix for a simple undirected weighted graph of 100 vertices and 500 edges was generated. The edge costs were chosen randomly as integers from 1 to 20. The starting vertex from the graph was chosen randomly, then Dijkstra's and Bellman-Ford algorithms were applied to find the shortest (in terms of costs) path between the starting and all other vertices. The computation was repeated 9 more times and the runtimes were measured and averaged.
+\textbf{Task 1.} A random adjacency matrix of a simple undirected graph $G(|V|=100, |E|=200)$ was generated. The matrix is symmetrical (undirected graph) and contains only 1s (edge) and 0s (no edge). The first 3 rows of the adjacency matrix were printed.
 
-Presented below is an example path between the starting node (50) and the current target (61). The path consists of 6 edges and 7 vertices:
-\[ 50 \xrightarrow{3} 64 \xrightarrow{1} 33 \xrightarrow{1} 84 \xrightarrow{1} 25 \xrightarrow{1} 52 \xrightarrow{2} 61 \]
-however, their costs add up to only 9.
+\noindent
+First row: {\footnotesize [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]}
+
+\noindent
+Second row: {\footnotesize [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]}
+
+\noindent
+Third row: {\footnotesize [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]}
+
+The adjacency matrix was transferred to an adjacency list which is either a list (or a dictionary) of lists of neighbors. The first 3 rows are presented below:
+
+\noindent
+First row: {\footnotesize [17, 51, 63, 71, 98]}
+
+\noindent
+Second row: {\footnotesize [38, 78]}
+
+\noindent
+Third row: {\footnotesize [41, 48, 62, 70]}
+
+Additionally, the graph was visualized.
 \begin{figure}[!h]
-	\centering
-	\includegraphics[width=\textwidth]{task1.png}
-	\caption{Example of a shortest path between two random vertices. Here the path consists of many edges, however, the costs of each are low.}
+\centering
+\includegraphics[width=0.9\textwidth]{graph.png}
+\caption{The random undirected graph with 100 vertices and 200 edges visualized (with shortest path between two random vertices).}
 \end{figure}
 
-In the task, shortest paths were computed from a randomly selected vertex to all other vertices in the graph by means of Dijkstra's and Bellman-Ford algorithms. Results for the starting vertex 50:
-\[ \begin{matrix} \text{Dijkstra:} & 0.0162 \text{ s} \\
-\text{Bellman-Ford:} & 0.0607 \text{ s} \end{matrix} \] 
-
-The results prove that Dijkstra's algorithm significantly faster than Bellman-Ford. The latter has an added benefit of working on weighted graphs with negative costs which was not covered in the present work.
+The printed rows show that adjacency lists are significantly more space-efficient than adjacency matrices. Additionally, they are more legible for humans as we can read the rows of the adjacency list as: \textit{the 0th vertex is adjacent to vertices 17, 51, 63, 71 and 98}. Both of the structures are better representations than plain visuals that get complicated even for small graphs.
 
 \newpage
 
-\textbf{Task 2.} The random 10$\times$20 grid with 40 obstacle cells was represented by a graph, where each cell is a node and edges exist only between adjacent cells in the grid. Obstacle cells were represented by the lack of vertex in its place. Two random non-obstacle cells were chosen and the shortest path between them was computed via A* algorithm. Such computations for different random pairs were executed five times. The computation runtimes were measured and presented on the graph below.
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=\textwidth]{task2.png}
-	\caption{Five shortest paths (A*) in a random 10$\times$20 grid with 40 obstacles with execution times.}
-\end{figure}
+\textbf{Task 2.} In the second task, DFS was used to find connected components of the generated graph. For the graph visualized previously, the connected components were: vertex number 64 and all the other vertices (they happened to be connected). The code in the listing (see Appendix) prints both connected components and all connected vertices (in pairs).
 
-According to the obtained data, the execution time is correlated with the length of the shortest path. The further the cells are located, the longer the algorithm runs in search of it.
+BFS was used to compute the shortest path between a pair of random vertices (from 53 to 20). The path for the mentioned vertices was:
+\[ 53 \to 12 \to 75 \to 20 \]
+The path contains 3 edges and 4 vertices. This path was visualized previously. The algorithm provides a path for any pair of vertices, if they are connected.
 
 \section*{Conclusions}
 \addcontentsline{toc}{section}{Conclusions}
 
-Path search algorithms for weighted graphs such as Dijkstra's, Bellman-Ford and A* algorithms were applied for searching the shortest path between random vertices in random graphs, both weighted and unweighted. The former two algorithms were compared in performance.
+Different representations of graphs were compared. Graph traversal algorithms for unweighted graphs such as Depth- and Breadth-first search were applied for searching the shortest path between random vertices in random graphs and for yielding connected components of the graph.
 
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
 
-GitHub link (task 1): \url{https://github.com/Dormant512/itmo_lab_listings/blob/main/lab6_1.py}.
-
-GitHub link (task 2): \url{https://github.com/Dormant512/itmo_lab_listings/blob/main/lab6_2.py}.
+GitHub link: \url{https://github.com/Dormant512/itmo_lab_listings/blob/main/lab5.py}.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.25\textwidth]{lab6-1.png}
-\includegraphics[width=0.25\textwidth]{lab6-2.png}
+\includegraphics[width=0.25\textwidth]{lab5.png}
 \end{figure}
 
 
