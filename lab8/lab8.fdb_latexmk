@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1666298252 "lab8.xdv" "lab8.pdf" "lab8" 1666298253
-  "lab8.xdv" 1666298252 17544 0dc9a338e7d8599fe4426c746f5c43cb "xelatex"
+["xdvipdfmx"] 1666366023 "lab8.xdv" "lab8.pdf" "lab8" 1666366024
+  "lab8.xdv" 1666366022 78412 9c5a2a78d4c02995778c5a58078b2b20 "xelatex"
   (generated)
   "lab8.pdf"
-["xelatex"] 1666298251 "lab8.tex" "lab8.xdv" "lab8" 1666298253
+["xelatex"] 1666366022 "lab8.tex" "lab8.xdv" "lab8" 1666366024
   "/etc/texmf/web2c/texmf.cnf" 1657043991 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dormant/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1662587279 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -74,6 +74,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def" 1523134385 12038 0675a914f4ef655c59b5d82e90103345 ""
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty" 1640123156 44023 c6f2f55a2bb9630fba10bfd488a5addd ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty" 1642282977 162076 2f6d31c4632f2730c57b9c0fda038e15 ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg" 1532898934 549 c4adac819276241fea8eb79c5ab7b99e ""
   "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty" 1642282977 1656 7e824878bad4df5a3e8bba4e463d9126 ""
@@ -135,12 +136,14 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1657044025 5133317 b28db23c83b1f49accf679467937b7fe ""
-  "lab8.aux" 1666298252 2099 b0f755c262d40071783e0a7d8112d6d4 "xelatex"
-  "lab8.out" 1666298252 669 bd6db0f6965dd52759b469dd1870ffa6 "xelatex"
-  "lab8.tex" 1666298249 4052 6c386a06c9ee7b575a2c3dff81268fcf ""
+  "lab8.aux" 1666366022 2621 7076f8bbc45b8ac3b1be659931c72d6c "xelatex"
+  "lab8.out" 1666366022 670 0c159acec37248fd550a45e8c29f3ae4 "xelatex"
+  "lab8.tex" 1666366021 11557 b056fa2d6299ffaf922620286301dc43 ""
+  "visuals//kruskal.png" 1666359883 146157 6413a7cc002889d2204f9a4a15b87d1d ""
   "visuals//kruskal_1.png" 1666296910 281324 5f30ed57b041651b54455b01f9b4d064 ""
   "visuals//kruskal_2.png" 1666296931 214961 271fc3dd2f7a09e8aa2ac49fa01c56c9 ""
   "visuals//lab8.png" 1666297904 8081 b91140f929cd7500b839b4c111d68ed6 ""
+  "visuals//prim.png" 1666363312 136408 2a47bd553350f98546b51596141447c2 ""
   "visuals//prim_1.png" 1666296947 270112 2f612bd62bcb1b8c5f31aae973c6989f ""
   "visuals//prim_2.png" 1666296970 222072 d8713c621df14a6b9d57344e78862c4b ""
   (generated)
