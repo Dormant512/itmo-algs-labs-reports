@@ -115,8 +115,9 @@ The use of first- and second-order methods (Gradient Descent, Non-linear Conjuga
 \section*{Formulation of the problem}
 \addcontentsline{toc}{section}{Formulation of the problem}
 
-Generate random numbers $\alpha \in (0, 1)$ and $\beta \in (0, 1)$. Furthermore, generate the noisy data $\{ x_k, y_k \}$, where $k = 0, \cdots, 100$, according to the rule:
-\[ y_k = \alpha x_k + \beta + \delta_k, \quad x_k = 0.01 k, \]
+Generate random numbers $\alpha \in (0, 1)$ and $\beta \in (0, 1)$. Furthermore, generate the noisy data $\{ x_k, y_k \}$, where $k = 0, \cdots, 100$, according to the rules:
+\[ y_k = \alpha x_k + \beta + \delta_k, \quad x_k = 0.01 k, \qquad \text{for the linear approximant,} \]
+\[ y_k = \frac{\alpha}{1+ \beta x_k} + \delta_k, \quad x_k = 0.01 k, \qquad \text{for the rational approximant,} \]
 where $\delta_k \sim N(0, 1)$ are values of a random variable with standard normal distribution. Approximate the data by the following linear and rational functions:
 \begin{enumerate}
 	\item $F(x, a, b) = ax + b$,
@@ -154,7 +155,7 @@ Algorithms used in this practical work:
 \section*{Results}
 \addcontentsline{toc}{section}{Results}
 
-Random parameters for generating noisy data were generated (and fixed with a random seed to be reproduced on different machines). They are shown below:
+Random parameters for generating noisy data were generated. They are shown below:
 \[ \alpha = 0.5488 \qquad \beta = 0.7152 \]
 Four methods of linear approximation were applied to the problem, the data obtained is presented in the table:
 \begin{center}
@@ -180,25 +181,27 @@ All four methods gave close results, as expected (no non-linearity). For the sam
 
 \newpage
 
-Those methods were again applied to solve the problem of rational approximation. Obtained data is presented below:
+Those methods were again applied to solve the problem of rational approximation. Random parameters were:
+\[ \alpha = 0.9200 \qquad \beta = 0.9561 \]
+Obtained data is presented below:
 \begin{center}
 \begin{tabular}{cccc}
 \hline
 alg/param                   & (A, B)            & Iterations & Function calls \\ \hline
-Gradient Descent            & (0.7521, -0.4651) & 20         & 40             \\
-Conjugated Gradient Descent & (0.7521, -0.4650) & 10         & 75             \\
-Quasi-Newton's Method       & (0.7442, -0.4750) & 10         & 12             \\
-Levenberg-Marquardt         & (0.7522, -0.4647) & 32         & 32             \\ \hline
+Gradient Descent            & (0.9138, 0.8348) & 9           & 18             \\
+Conjugated Gradient Descent & (0.9244, 0.8769) & 10          & 57             \\
+Quasi-Newton's Method       & (0.9219, 0.8686) & 9           & 12             \\
+Levenberg-Marquardt         & (0.9244, 0.8769) & 13          & 13             \\ \hline
 Exhaustive Search (Task 2)  & (1.0000, 0.0000)  & 1000000    & 1000000        \\
 Gauss Search (Task 2)       & (1.0000, 0.0000)  & 50         & 144            \\
-Nelder-Mead Search (Task 2) & (0.7522, -0.4647) & 39         & 76             \\ \hline
+Nelder-Mead Search (Task 2) & (1.1282, -0.4661) & 43         & 83             \\ \hline
 \end{tabular}
 \end{center}
-Due to non-linearity, methods of Exhaustive Search and Gauss Search converged to a minimum, different from all other methods, providing similar results (additionally, Quasi-Newton's Method diverged from the others). In terms of performance, again, methods utilizing derivatives converged significantly faster (taking only 10 to 32 iterations and up to 40 function calls) which contrasts slow direct methods.
+Due to non-linearity, direct methods of Exhaustive Search and Gauss Search and Nelder-Mead Search converged to a minimum, different from all other methods, providing similar results. In terms of performance, again, methods utilizing derivatives converged significantly faster (taking only 10 to 13 iterations and up to 57 function calls) which contrasts slow direct methods.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\textwidth]{rational.png}
+\includegraphics[width=0.8\textwidth]{rational.png}
 \caption{Results of applying Gradient Descent, Conjugated Gradient Descent, Quasi-Newton's Method and Levenberg-Marquardt Algorithm to solve the problem of rational approximation.}
 \end{figure}
 
