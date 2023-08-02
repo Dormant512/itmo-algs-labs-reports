@@ -1,2 +1,2 @@
-# itmo_lab_reports
-ITMO university lab tex reports. Closed source, unfortunately.
+# itmo-algs-labs-reports
+ITMO university lab tex reports for the discipline "Algorithm Design".
